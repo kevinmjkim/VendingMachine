@@ -51,12 +51,12 @@ public class Snacks {
         this.quantity2 = quantity2;
     }
 
-    public String getDrink3() {
-        return drink3;
+    public String getSnack3() {
+        return snack3;
     }
 
-    public void setDrink3(String drink3) {
-        this.drink3 = drink3;
+    public void setSnack3(String Snack3) {
+        this.snack3 = snack3;
     }
 
     public String getPrice3() {
@@ -80,7 +80,7 @@ public class Snacks {
     private String snack2;
     private String price2;
     private String quantity2;
-    private String drink3;
+    private String snack3;
     private String price3;
     private String quantity3;
 }
