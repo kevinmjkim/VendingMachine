@@ -1,22 +1,12 @@
 package vendingmachine;
 
-import java.util.List;
-
-public class Drink {
+public class Snack {
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
     }
 
     public double getPrice() {
@@ -27,9 +17,15 @@ public class Drink {
         this.price = price;
     }
 
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
     private String name;
-    private int quantity;
     private double price;
-
-
+    private int quantity;
 }

@@ -1,9 +1,11 @@
 package vendingmachine;
 import java.util.List;
-import java.util.ArrayList;
+
 public class VendingMachine {
 private String name;
 
+    private List<Drink> drinkList;
+    private double money;
     public String getName() {
         return name;
     }
@@ -20,34 +22,28 @@ private String name;
         this.drinkList = drinkList;
     }
 
-    private List<Drink> drinkList;
 
-    public String getName2() {
-        return name2;
-    }
 
-    public void setName2(String name2) {
-        this.name2 = name2;
-    }
 
-    public List<Snacks> getSnacksList() {
+
+    public List<Snack> getSnacksList() {
         return snacksList;
     }
 
-    public void setSnacksList(List<Snacks> snacksList) {
+    public void setSnacksList(List<Snack> snacksList) {
         this.snacksList = snacksList;
     }
 
-    private String name2;
-private List<Snacks> snacksList;
 
-    public String getMoney() {
+private List<Snack> snacksList;
+
+    public double getMoney() {
         return money;
     }
 
-    public void setMoney(String money) {
+    public void setMoney(double money) {
         this.money = money;
     }
 
-    private String money;
+
 }
