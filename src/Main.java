@@ -56,9 +56,7 @@ public class Main {
             int quantity = hershey.getQuantity();
             if(quantity < 0) {
                 System.out.println("Sorry! We're out of Hershey!");
-            } if(quantity == 0) {
-                    System.exit(0);
-                }else {
+            } else {
 
                 vendingMachine.setMoney(vendingMachine.getMoney() + hershey.getPrice());
                 hershey.setQuantity(quantity-1);
@@ -72,9 +70,7 @@ public class Main {
                 int quantity = pepsi.getQuantity();
                 if(quantity < 0) {
                     System.out.println("Sorry! We're out of Pepsi!");
-                } if(quantity == 0) {
-                    System.exit(0);
-                } else {
+                }  else {
                     vendingMachine.setMoney(vendingMachine.getMoney() + pepsi.getPrice());
                     pepsi.setQuantity(quantity-1);
                 }
@@ -86,9 +82,7 @@ public class Main {
                 int quantity = fanta.getQuantity();
                 if(quantity < 0) {
                     System.out.println("Sorry! We're out of Fanta!");
-                } if(quantity == 0) {
-                    System.exit(0);
-                } else {
+                }  else {
                     vendingMachine.setMoney(vendingMachine.getMoney() + fanta.getPrice());
                     fanta.setQuantity(quantity-1);
                 }
@@ -103,8 +97,6 @@ public class Main {
                 } else {
                     vendingMachine.setMoney(vendingMachine.getMoney() + lays.getPrice());
                     lays.setQuantity(quantity-1);
-                } if(quantity == 0) {
-                    System.exit(0);
                 }
             } else if(choice == 5) {
                 System.out.println("You chose Chips Ahoy. Sweet Choice!");
@@ -114,9 +106,7 @@ public class Main {
                 int quantity = cookie.getQuantity();
                 if(quantity < 0) {
                     System.out.println("Sorry! We're out of Chips Ahoy!");
-                } if(quantity == 0) {
-                    System.exit(0);
-                }else {
+                } else {
                     vendingMachine.setMoney(vendingMachine.getMoney() + cookie.getPrice());
                     cookie.setQuantity(quantity-1);
                 }
