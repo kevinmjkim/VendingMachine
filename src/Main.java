@@ -50,8 +50,6 @@ public class Main {
             int choice = scanner.nextInt();
             if(choice == 1) {
                 System.out.println("You chose Hershey. Delicious Option!");
-                vendingMachine.setMoney(vendingMachine.getMoney() + hershey.getPrice());
-                hershey.setQuantity(hershey.getQuantity() - 1);
                 System.out.println("The number of Hershey left is " + hershey.getQuantity());
             int quantity = hershey.getQuantity();
             if(quantity < 0) {
@@ -64,8 +62,6 @@ public class Main {
 
             } else if(choice == 2) {
                 System.out.println("You chose Pepsi. Poppy Option!");
-                vendingMachine.setMoney(vendingMachine.getMoney() + pepsi.getPrice());
-                pepsi.setQuantity(pepsi.getQuantity() - 1);
                 System.out.println("The number of Pepsi left is " + pepsi.getQuantity());
                 int quantity = pepsi.getQuantity();
                 if(quantity < 0) {
@@ -76,8 +72,6 @@ public class Main {
                 }
             } else if(choice == 3) {
                 System.out.println("You chose Fanta. Fantastical!");
-                vendingMachine.setMoney(vendingMachine.getMoney() + fanta.getPrice());
-                fanta.setQuantity(fanta.getQuantity() - 1);
                 System.out.println("The number of Fanta left is " + fanta.getQuantity());
                 int quantity = fanta.getQuantity();
                 if(quantity < 0) {
@@ -88,8 +82,6 @@ public class Main {
                 }
             } else if(choice == 4) {
                 System.out.println("You chose Lays. How original!");
-                vendingMachine.setMoney(vendingMachine.getMoney() + lays.getPrice());
-                pepsi.setQuantity(lays.getQuantity() - 1);
                 System.out.println("The number of Lays left is " + lays.getQuantity());
                 int quantity = lays.getQuantity();
                 if(quantity < 0) {
@@ -100,8 +92,6 @@ public class Main {
                 }
             } else if(choice == 5) {
                 System.out.println("You chose Chips Ahoy. Sweet Choice!");
-                vendingMachine.setMoney(vendingMachine.getMoney() + cookie.getPrice());
-                pepsi.setQuantity(cookie.getQuantity() - 1);
                 System.out.println("The number of Chips Ahoy left is " + cookie.getQuantity());
                 int quantity = cookie.getQuantity();
                 if(quantity < 0) {
